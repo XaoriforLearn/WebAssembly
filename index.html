@@ -5,120 +5,202 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>reveal.js</title>
+	<title>WebAssembly</title>
 
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
 	<link rel="stylesheet" href="dist/theme/tokyo-night.css">
+	<link rel="stylesheet" href="my.css">
 
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/tokyo-night.css">
 	<script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section>
-				<h1>
-					Beautiful presentations
-				</h1>
-				<h2>New features</h2>
-				<ul>
-					<li>Nerd icons </li>
-					<li><code class="js">(inline) => code("highlighting")</code></li>
-					<li>Automatic QR Code generation</li>
-					<li>and much more!</li>
-				</ul>
+			<section class="main" data-transition="zoom">
+				<h1>Основы алгоритмизации и программирование</h1>
+				<img src="https://webassembly.org/css/webassembly.svg" width="320px">
+				<div style="text-align: end; font-size: 14pt">
+					Author:<a href="https://github.com/XaoriGit"> Бардола А. К.</a>
+				</div>
 			</section>
-			<section>
-				<h1>
-					Custom TokyoNight theme
-				</h1>
-				<h2 class="fragment">That has</h2>
-				<h3 class="fragment">Multi</h3>
-				<h4 class="fragment">Level</h4>
-				<h5 class="fragment">Heading</h5>
-				<h6 class="fragment">Coloring</h6>
-				<h6>Thanks to this project <a href="https://github.com/tcmmichaelb139/obsidian-tokyonight"></a> for the colorscheme!</h6>
-			</section>
-			<section>
-				<section>
-					<h1>Tailwind CSS</h1>
-					<div class="grid grid-cols-2 gap-8">
-						<div>
-							<h5>Lorem, ipsum.</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
-								dignissimos, maxime possimus? Error, nihil in.</p>
-						</div>
-						<div>
-							<h5>Lorem, ipsum.</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
-								dignissimos, maxime possimus? Error, nihil in.</p>
-						</div>
-						<div class="col-span-2">
-							<h5>Lorem, ipsum.</h5>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod fugiat harum modi laboriosam
-								dignissimos, maxime possimus? Error, nihil in.</p>
-						</div>
-					</div>
+			<section >
+				<section data-auto-animate data-transition="zoom">
+					<h1>What is this?</h1>
 				</section>
-				<section>
-					<h1>Custom classes</h1>
-					<div class="grid grid-cols-3 gap-8">
-						<div class="border-r">
-							<h5>border-r</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
-						</div>
-						<div class="border-o">
-							<h5>border-o</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
-						</div>
-						<div class="border-y">
-							<h5>border-y</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, soluta!</p>
-						</div>
-					</div>
-				</section>
-			</section>
-			<section>
 				<section data-auto-animate>
-					<h1>New code highlighting!</h1>
+					<h1>What is this?</h1>
+					<hr color="">
 					<div>
-						Now also has Tokyo Night <code>highlight.js</code> highlighting implementation
+						WebAssembly - это не ЯП, а <i>формат представления данный</i> в двоичной системе исчисления,
+						предназначеный
+						для выполнения кода в браузере, который компилируется из языков высокого уровня.
 					</div>
-					<pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
+				</section>
+			</section>
+			<section>
+				<section data-auto-animate>
+					<h1>history of creation</h1>
 				</section>
 				<section data-auto-animate>
-					<h1>New code highlighting!</h1>
-					<h5>Inline code highlighting is now also supported!</h5>
-					<p>
-						Just wrap your code with <code>&lt;code&gt;</code> tag and get
-						highlighting like this <code class="js">const foo = () => {return bar}</code>!
+					<h1>history of creation</h1>
+					<hr color="">
+					<div style="display: flex; justify-content: center;">
+						<img class="company"
+							src="https://www.mozilla.org/media/protocol/img/logos/mozilla/logo-word-hor.e20791bb4dd4.svg">
+						<img class="company"
+							src="https://www.google.ru/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+						<img class="company"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/200px-Microsoft_logo_%282012%29.svg.png">
+						<img class="company"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/80px-Apple_logo_black.svg.png">
+					</div>
+					<p style="font-size: 28px;">
+						Всё началось примерно в 2015 году, когда представители Mozilla, Google,
+						Microsoft и Apple, собрались вместе, чтобы обсудить будущее веб-технологий. Они понимали, что
+						JavaScript, хотя и мощный, не всегда может обеспечить ту производительность, которая нужна для
+						сложных приложений. Именно тогда родилась идея создания<a
+							href="https://webassembly.org/">WebAssembly</a>
 					</p>
 				</section>
 			</section>
 			<section>
-				<h1>Now supports Awesome Icons!</h1>
-				<div>Awesome project that provides awesome icons with classes!</div>
-				<h6>Checkout their github for icons like this <a href="https://github.com/FortAwesome/Font-Awesome"></a>!
-				</h6>
+				<section data-auto-animate>
+					<h1>How it works</h1>
+				</section>
+				<section data-auto-animate>
+					<h1>How it works</h1>
+					<hr color="">
+					<ul>
+						<li>
+							WebAssembly выполняется в <i>виртуальной машине</i> внутри браузера (Т.е не компилируется и
+							не имеет интерпритатора).
+						</li>
+						<li>
+							WebAssembly имеет <i>статическую</i> типизацию и компактный бинарный формат, который может
+							быть
+							декодирован гораздо быстрее, чем JavaScript может быть распарсен.
+						</li>
+
+
+					</ul>
+				</section>
 			</section>
 			<section>
-				<h1>Now supports automatic QRCode generation!</h1>
-				<div>With GoQR you can just add data-type and alt attributes to your <code
-						class="html">&lt;img alt="https://goqr.me/" data-type="qrcode" / &gt;</code> tag!</div>
-				<img class="r-stretch" alt="https://goqr.me/" data-type="qrcode" />
-				</h6>
+				<section data-auto-animate>
+					<h1>WebAssembly is used</h1>
+				</section>
+				<section data-auto-animate>
+					<h1>WebAssembly is used</h1>
+					<hr color="">
+					<div style="display: grid; grid-template-columns: repeat(2, 1fr); row-gap: 1em;">
+						<div>
+							<h4>frontend</h4>
+							<i>
+								<ol>
+									<li>
+										Figma
+									</li>
+									<li>
+										Photoshop
+									</li>
+									<li>
+										Autodesk Viewer
+									</li>
+								</ol>
+							</i>
+
+						</div>
+						<div>
+							<h4>Backend</h4>
+							<i>
+								<ol>
+									<li>
+										Fastly
+									</li>
+									<li>
+										Cloudflare Workers,
+									</li>
+									<li>
+										Vercel
+									</li>
+								</ol>
+							</i>
+						</div>
+					</div>
+
+				</section>
 			</section>
 			<section>
-				<h1>New changes on the way!</h1>
+				<section data-auto-animate>
+					<h1>Example code</h1>
+				</section>
+				<section data-auto-animate>
+					<h1>Example code</h1>
+					<hr color="">
+					<h2>Rust</h2>
+					<pre><code class="rust">
+							fn factorial(n: u32) -> u32 {
+								if n == 0 {
+									return 1;
+								}
+								n * factorial(n - 1)
+							}
+						</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h1>Example code</h1>
+					<hr color="">
+					<h2>WebAssembly</h2>
+					<pre><code class="wasm" style="font-size: 18px;">
+						(module
+						(func $factorial (param $0 i32) (result i32)
+						  (if (result i32)
+							(i32.eq
+							  (get_local $0)
+							  (i32.const 0))
+							(then
+							  (i32.const 1))
+							(else
+							  (i32.mul
+								(get_local $0)
+								(call $factorial
+								  (i32.sub
+									(get_local $0)
+									(i32.const 1)))))))
+						(export "factorial" (func $factorial)))
+						</code></pre>
+				</section>
+			</section>
+			<section>
+				<section data-auto-animate>
+					<h1>Источники</h1>
+				</section>
+				<section data-auto-animate>
+					<h1>Источники</h1>
+					<hr color="">
+					<ul>
+						<li>
+							<a href="https://ru.wikipedia.org/wiki/WebAssembly">WebAssembly(wikipedia)</a>
+						</li>
+						<li>
+							<a href="https://habr.com/ru/companies/vk/articles/775852/">WebAssembly: короткий обзор
+								ассемблера для фронтенда(habr)</a>
+						</li>
+						<li>
+							<a href="https://habr.com/ru/articles/475778/">WebAssembly: что и как(habr)</a>
+						</li>
+						<li>
+							<a
+								href="https://sky.pro/wiki/javascript/webassembly-chto-eto-preimushestva-i-kak-ispolzovat/">WebAssembly:
+								что это, преимущества и как использовать(sky)</a>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 	</div>
@@ -141,9 +223,10 @@ var foo = {
 		// - https://revealjs.com/config/
 		Reveal.initialize({
 			hash: true,
+			controls: false,
+			loop: true,
 			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-			slideNumber: true
 		});
 	</script>
 </body>
