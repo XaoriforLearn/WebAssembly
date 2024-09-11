@@ -21,15 +21,15 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section class="main" data-transition="zoom">
+			<section class="main">
 				<h1>Основы алгоритмизации и программирование</h1>
 				<img src="https://webassembly.org/css/webassembly.svg" width="320px">
 				<div style="text-align: end; font-size: 14pt">
 					Author:<a href="https://github.com/XaoriGit"> Бардола А. К.</a>
 				</div>
 			</section>
-			<section >
-				<section data-auto-animate data-transition="zoom">
+			<section>
+				<section data-auto-animate>
 					<h1>What is this?</h1>
 				</section>
 				<section data-auto-animate>
@@ -63,8 +63,7 @@
 						Всё началось примерно в 2015 году, когда представители Mozilla, Google,
 						Microsoft и Apple, собрались вместе, чтобы обсудить будущее веб-технологий. Они понимали, что
 						JavaScript, хотя и мощный, не всегда может обеспечить ту производительность, которая нужна для
-						сложных приложений. Именно тогда родилась идея создания<a
-							href="https://webassembly.org/">WebAssembly</a>
+						сложных приложений. Именно тогда родилась идея создания <a href="https://webassembly.org/">WebAssembly</a>
 					</p>
 				</section>
 			</section>
@@ -102,13 +101,13 @@
 							<h4>frontend</h4>
 							<i>
 								<ol>
-									<li>
+									<li class="used">
 										Figma
 									</li>
-									<li>
+									<li class="used">
 										Photoshop
 									</li>
-									<li>
+									<li class="used">
 										Autodesk Viewer
 									</li>
 								</ol>
@@ -119,13 +118,13 @@
 							<h4>Backend</h4>
 							<i>
 								<ol>
-									<li>
+									<li class="used">
 										Fastly
 									</li>
-									<li>
+									<li class="used">
 										Cloudflare Workers,
 									</li>
-									<li>
+									<li class="used">
 										Vercel
 									</li>
 								</ol>
@@ -223,8 +222,10 @@
 		// - https://revealjs.com/config/
 		Reveal.initialize({
 			hash: true,
-			controls: false,
+			controls: true,
 			loop: true,
+			viewDistance: 3,
+			transition: 'zoom',
 			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
 		});
